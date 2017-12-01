@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fontes e Cores</title>
+        <meta charset="utf=8"/>
+        <style type="text/css">
+            div{
+                font-size: 30px;
+            }
+            .texto{
+                font-size: 1em; /* pode utilizar px, % e em */ 
+            }
+            .negrito{
+                font-weight: bold ; /* Pode se variar de 100 a 900 (em numero mesmo, e tirando o bold) */ 
+            }
+            .estilo{
+                font-style: italic; 
+              /* font-style: oblique; */
+            }
+            .texto-padrao{
+                font: bold 40px "Times New Roman", Times, serif
+            }
+            .formatacao{
+               /* text-decoration: underline; */
+               /* text-decoration: overline; */
+               text-decoration: line-through;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <p class="texto">Duis id consectetur purus. Curabitur at purus <span class="formatacao">nulla</span></p>
+            <p class="negrito">Conteúdo 1</p>
+            <p class="estilo">Conteúdo 2</p>
+            <p class="estilo">Conteúdo 3</p>
+            <p class="texto-padrao">Conteúdo 4</p>
+        </div>
+     </body>
+</html>
