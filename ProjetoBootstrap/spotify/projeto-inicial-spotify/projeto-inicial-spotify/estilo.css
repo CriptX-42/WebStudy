@@ -1,0 +1,138 @@
+/* -- ======================================== Layout =================================*/
+html, body, .capa{
+    height: 100%;
+}
+body{
+    background: url('imagens/capa.png'),
+    url('imagens/ruido.png'),
+    linear-gradient(50deg,#F8744C,#1aff1a   );
+    background-attachment: fixed; /* --------- Fixa o backgroundo sem repitir e sem deixar pequeno ---------*/
+    font-family: Helvetica,Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+/* --------- Barra de Navegação ---------*/
+.img-logo{
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url('imagens/spotify.svg') no-repeat;
+    
+    background-size: contain;
+    color: transparent;
+}
+nav.navbar-transparente{
+    
+    padding: 18px 0px;
+    background: rgba(0,0,0,0.6);
+}
+.navbar-brand{
+    padding: 0px;
+    padding-top: 5px;
+}
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 14px 10px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link>li>a, footer .nav a{
+    color:white;
+}
+/*.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link>li>a, footer .nav a:hover{
+    color: #9bf0e1;
+}*/
+
+/* --------- Imagem de capa ---------*/
+.capa{
+    
+    display: table; /* -- Para centralizar, fazer a capa ou o que quer q seja se comportar como tabela --*/
+    width: 100%;
+}
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell; /* -- Para centralizar --*/
+    vertical-align: middle; /* -- Para centralizar --*/
+}
+/* --------- Botões ---------*/
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -maz-border-radius:500px;
+    padding: 10px 35px;
+    text-transform: uppercase; /* -- Deixa tudo com letra maiuscula --*/
+    margin:0px 15px; 
+    transition: background 0.4s, color 0.4s;
+}
+.btn-azul{
+    background: #005ce6;
+}
+.btn-azul:hover{
+    background-color: #0047b3;
+    color: white;
+}
+.btn-branco{
+    border: 2px solid white;
+}
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+/* --------- Secao servico ---------*/
+#servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.albuns{
+    padding: 10px 0px 10px 0px;
+}
+/* --------- Recursos ---------*/
+#recursos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+/* --------- rodapé ---------*/
+footer{
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+.item-rede-social{
+    float: right;
+    margin-left: 20px;
+}
+/* -- ======================================== Topografia =================================*/
+h1{
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+#rodape h4{
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#servicos h2,#servicos h3{
+    color: #005ce6;
+} 
+#recursos h3{ /* --------- Formata PENAS os h3 presentes em recursos ---------*/
+    color: #9bf0c1;
+}
