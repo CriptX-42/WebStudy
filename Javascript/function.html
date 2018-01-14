@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Function</title>
+        <!--[if lt IE 9]>
+	        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+        
+        function CalculationArea(width, height){
+            width = parseFloat(width);
+            height = parseFloat(height);
+
+            var area = (width * height);
+            return area;
+        }
+        var width = prompt("Type a width:");
+        var height = prompt("Type a height:");
+       document.write(CalculationArea(width,height));
+        </script> 
+        
+    </head>
+    <body>
+        
+    </body> 
+</html>

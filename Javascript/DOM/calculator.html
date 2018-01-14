@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Calculadora</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<script type="text/javascript">
+			function calculate(){
+                var operation = document.getElementById('operation').value;
+                var num1 = document.getElementById('num1').value;
+                var num2 = document.getElementById('num2').value;
+
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                if(num1 == '' || num1 == null ){
+                    alert('Please type the first number (valid number) to operation');
+                    return false;
+                }
+                if(num2 == '' || num2 == null ){
+                    alert('Please type the second number (valid number) to operation');
+                    return false;
+                }
+                var result = null;
+                switch(operation){
+                    case '1': //Subtration
+                    result = num1 - num2;
+
+                    break;
+                    case '2': //Addtion
+                    result = num1 + num2;
+                    break;
+                    case '3': //Multiplication
+                    result = num1 * num2;
+                    break;
+                    case '4': //Division
+                    result = num1 / num2;
+                    break;
+                    default:
+                    alert('Invalid option');
+                    return false;
+                }
+                
+                document.getElementById('result').value = result;
+            }
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Calculator</h1>
+			</div>
+
+			<hr />
+
+			<div class="row">
+				<div class="col-md-4">
+					<input id="num1" type="text" class="form-control" placeholder="Type a number" />
+				</div>
+
+				<div class="col-md-4">
+					<select id="operation" class="form-control">
+						<option value="">--Select a operation</option>
+						<option value="1">Subtraction</option>
+						<option value="2">Addition</option>
+						<option value="3">Multiplication</option>
+						<option value="4">Division</option>
+					</select>
+				</div>
+
+				<div class="col-md-4">
+					<input id="num2" type="text" class="form-control" placeholder="Type a number"/>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="row">
+				<div class="col-md-4"></div>
+
+				<div class="col-md-4"></div>
+
+				<div class="col-md-4">
+					<button type="button" class="btn btn-lg btn-primary pull-right" onclick="calculate()">Calculate</button>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="well">
+				Result: <input id="result" type="text" class="form-control" readonly/>
+			</div>
+		</div>
+	</body>
+</html>

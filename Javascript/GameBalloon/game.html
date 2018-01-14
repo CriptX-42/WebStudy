@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Bursting balloons</title>
+
+		<script src="js/game.js"></script>
+	</head>
+
+	<body onload="StartGame()">
+		<div style="float:left; width:auto; height:500px; background: #FFF; border:solid 1px #A2A2A2; margin-right: 5px;">
+			<table>
+				<tr>
+					<td>
+						<img src= "image/balao_azul_grande.png"/>
+					</td>
+					<td>
+						<span id="wholeBalloons" style="font-size: 40px;"></span>
+					</td>
+					
+				</tr>
+			</table>
+			<br/>
+			<table>
+				<tr>
+					<td>
+						<img src= "image/balao_azul_grande_estourado.png"/>
+					</td>
+					<td>
+						<span id="BlownBalloons" style="font-size: 40px;"></span>
+					</td>
+					
+				</tr>
+			</table>
+			<br/>
+			<table style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url('image/cronometro.png'); text-align:center;">
+						<span id="stopwatch" style="color: red; font-size:30px;"></span>
+					</td>
+					
+					
+				</tr>
+			</table>
+			
+		</div>
+		<div id="scenario" style="float: left; width: 600px; height:500px; background: url('image/cenario.png'); background-position: bottom;">
+		</div>
+	</body>
+	<br/>
+	<footer>
+		<div style=" position:absolute;bottom:0;width:100%;">
+		<p style="text-align: center;">&copy; 2018 - Cript-X</p> 
+		</div>
+	</footer>
+</html>

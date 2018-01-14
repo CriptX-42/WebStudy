@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Bursting balloons</title>
+
+		<script language='Javascript'>
+			function startGame(){
+				var LevelGame = document.getElementById('LevelGame').value;
+				window.location.href = 'game.html?' + LevelGame;
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<p>
+			<b>Level:</b>
+			<select id="LevelGame">
+				<option value="1">Easy</option>
+				<option value="2">Normal</option>
+				<option value="3">Hard</option>
+			</select>
+		</p>
+		<br/>
+		<img src="image/iniciar.png" onclick="startGame()" />
+		</div>
+	</body>
+	<br/>
+	<footer>
+		<div style=" position:absolute;bottom:0;width:100%;">
+		<p style="text-align: center;">&copy; 2018 - Cript-X</p> 
+		</div>
+	</footer>
+
+</html>
