@@ -4,7 +4,7 @@ function StartGame(){
     var url = window.location.search;
     
     var LevelGame = url.replace("?","");
-    alert(LevelGame);
+    
 
     var SecondsTime = 0;
 
