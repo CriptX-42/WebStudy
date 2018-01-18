@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jquery Event Mouse</title>
+        <!-- CDN with Jquery -->
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+        <script src="Jquery/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //click
+                //dblclick 
+                //mousedown
+                //mouseover
+                //mouseout
+                $('#div1').mouseout(function(){
+                    alert('Element was double clicked')
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="height:150px; width:150px;background:#CCC"></div>
+    </body>
+</html>

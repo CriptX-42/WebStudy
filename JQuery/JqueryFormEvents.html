@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jquery  Events</title>
+        <!-- CDN with Jquery -->
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+        <script src="Jquery/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              //focus
+              //blur
+              //change
+                $('.field1').change(function(){
+                    alert('Element was modified');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <select class="field1">
+        <option value="1">First option</option>
+        <option value="2">Second option</option>
+    </select>
+    </body>
+</html>
